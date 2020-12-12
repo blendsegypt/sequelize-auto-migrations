@@ -149,7 +149,7 @@ let info = migrate.writeMigration(
 currentState.revision = previousState.revision + 1;
 fs.writeFileSync(
   path.join(migrationsDir, "_current.json"),
-  `{ "last-created-migration": "${info.info.timestamp}}"`
+  `{ "last-created-migration": "${info.info.timestamp}}"}`
 );
 
 console.log(
